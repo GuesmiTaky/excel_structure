@@ -1,0 +1,156 @@
+.gallery {
+  margin: 20px 40px 40px 40px;
+}
+
+.group-gallery-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title-gallery-main {
+  font-family: "DM Serif Display";
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 69px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #192644;
+}
+
+.sub-title-gallery-main {
+  color: #525252;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Poppins";
+  line-height: 25px;
+  width: 675px;
+  height: 79px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.button-gallery-main {
+  width: 144.14px;
+  height: 59px;
+  padding: 18px 13px 18px 13px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color: #006355;
+  border-color: transparent;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.arrow-svg-button {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-height: 300px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+
+.image-width-25 {
+  width: 25%;
+}
+
+.image-width-50 {
+  width: 50%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s, filter 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.image-container img:hover {
+  filter: brightness(50%);
+}
+
+.image-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-title {
+  opacity: 1;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .image-width-50,
+  .image-width-25 {
+    width: 33.33%;
+  }
+}
+
+/* Styles pour les smartphones */
+@media (max-width: 768px) {
+  .title-gallery-main {
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .image-row {
+    flex-direction: column;
+    margin-bottom: 0px;
+    max-height: 600px;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 300px;
+  }
+
+  .image-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .image-width-25 {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .image-width-50 {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}

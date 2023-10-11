@@ -1,0 +1,336 @@
+.main-hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  border-bottom-left-radius: 200px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container img {
+  background-size: cover;
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+  z-index: 2;
+  border-bottom-left-radius: 70px;
+}
+
+.img-hero-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  border-bottom-left-radius: 70px;
+  transition: opacity 2s;
+}
+
+.img-hero-section.active {
+  opacity: 1;
+}
+
+.indicator-container {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: #41b125;
+}
+
+.indicator::before {
+  content: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.green-border-hero-section {
+  border: 12px solid #41b125;
+  width: 440px;
+  height: 340px;
+  position: absolute;
+  top: 94px;
+  left: 94px;
+  padding: 10px;
+  z-index: 5;
+}
+
+.text-hero-section {
+  position: absolute;
+  top: 106px;
+  left: 120px;
+  z-index: 5;
+  font-family: "DM Serif Display";
+  font-size: 85px;
+  font-weight: 400;
+  line-height: 98px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.sub-text-hero-section {
+  position: absolute;
+  top: 445px;
+  left: 120px;
+  z-index: 5;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.button-hero-section {
+  position: sticky;
+  top: 560px;
+  left: 120px;
+  z-index: 5;
+  display: inline-flex;
+  padding: 18px 13px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.hidden {
+  animation: fadeOut 4s forwards;
+}
+
+.visible {
+  animation: fadeIn 4s forwards;
+}
+
+@media (max-width: 1270px) {
+  .main-hero-section {
+    height: 500px;
+  }
+  .green-border-hero-section {
+    width: 350px;
+    height: 250px;
+    top: 40px;
+  }
+
+  .text-hero-section {
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 70px;
+    top: 60px;
+  }
+
+  .sub-text-hero-section {
+    font-weight: 400;
+    line-height: 18px;
+    top: 300px;
+  }
+
+  .button-hero-section {
+    top: 400px;
+  }
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 1024px) {
+  .main-hero-section {
+    height: 400px;
+    border-bottom-left-radius: 150px;
+  }
+
+  .green-border-hero-section {
+    width: 350px;
+    height: 250px;
+    top: 40px;
+  }
+
+  .text-hero-section {
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 70px;
+    top: 60px;
+  }
+
+  .sub-text-hero-section {
+    font-weight: 400;
+    line-height: 18px;
+    top: 300px;
+  }
+
+  .button-hero-section {
+    top: 400px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main-hero-section {
+    height: 400px;
+    border-bottom-left-radius: 110px;
+  }
+  .green-border-hero-section {
+    width: 250px;
+    height: 170px;
+    top: 30px;
+  }
+
+  .text-hero-section {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 45px;
+    top: 50px;
+  }
+
+  .sub-text-hero-section {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 14px;
+    top: 210px;
+  }
+
+  .button-hero-section {
+    top: 320px;
+    left: 120px;
+    padding: 12px 10px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .indicator {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Styles pour les smartphones */
+@media (max-width: 768px) {
+  .main-hero-section {
+    height: 400px;
+    border-bottom-left-radius: 110px;
+  }
+  .green-border-hero-section {
+    width: 250px;
+    height: 170px;
+    top: 30px;
+  }
+
+  .text-hero-section {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 45px;
+    top: 50px;
+  }
+
+  .sub-text-hero-section {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 14px;
+    top: 210px;
+  }
+
+  .button-hero-section {
+    top: 320px;
+    left: 120px;
+    padding: 12px 10px;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .indicator {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 559px) {
+  .main-hero-section {
+    height: 300px;
+    border-bottom-left-radius: 110px;
+  }
+
+  .green-border-hero-section {
+    width: 50%;
+    height: 50%;
+    top: 30px;
+  }
+
+  .text-hero-section {
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 40px;
+    top: 50px;
+  }
+
+  .button-hero-section {
+    top: 220px;
+    left: 120px;
+  }
+
+  .sub-text-hero-section {
+    display: none;
+  }
+}

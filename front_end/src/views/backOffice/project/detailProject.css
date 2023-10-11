@@ -1,0 +1,11 @@
+.css-1qzevvg {
+  visibility: hidden;
+}
+
+.carousel-image {
+  min-width: 400px !important;
+  min-height: 400px !important;
+  max-width: 400px !important;
+  max-height: 400px !important;
+  object-fit: contain !important;
+}

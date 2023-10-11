@@ -1,0 +1,164 @@
+.project-front-content {
+  background-image: url("../../../images/BackgroundImage.svg");
+}
+
+.group-card-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.first-card-desc-project {
+  width: 50%;
+  height: 470px;
+  padding: 33px 31.4375px 33px 38px;
+  border-radius: 20px;
+  gap: 10px;
+  background-color: #f2f7f6;
+  margin-right: 20px;
+}
+
+.group-item-card-title {
+  width: 100%;
+}
+
+.item-card-title {
+  font-family: "DM Serif Display";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.item-card-data {
+  font-family: "Jost";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.title-desc-project-card {
+  font-family: "DM Serif Display";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.text-desc-project-card {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.seconde-card-desc-project {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1599px) {
+  .title-desc-project-card {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .item-card-title {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  .item-card-data {
+    font-size: 16px;
+  }
+
+  .first-card-desc-project {
+    height: 415px;
+  }
+
+  .text-desc-project-card {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+/* Ajustements pour tablettes */
+@media (max-width: 1200px) {
+  .group-card-desc {
+    flex-direction: column-reverse;
+  }
+
+  .item-card-title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+
+  .title-desc-project-card {
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 43px;
+    margin-bottom: 10px;
+  }
+
+  .text-desc-project-card {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .first-card-desc-project {
+    width: 90%;
+    height: 100%;
+  }
+
+  .seconde-card-desc-project {
+    width: 85%;
+    margin-top: 20px;
+  }
+}
+
+/* Ajustements pour mobile */
+@media (max-width: 768px) {
+  .group-card-desc {
+    flex-direction: column-reverse;
+  }
+
+  .item-card-title {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 0px;
+  }
+
+  .title-desc-project-card {
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+
+  .text-desc-project-card {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .first-card-desc-project {
+    width: 90%;
+    height: 100%;
+  }
+
+  .seconde-card-desc-project {
+    margin-top: 20px;
+  }
+}
