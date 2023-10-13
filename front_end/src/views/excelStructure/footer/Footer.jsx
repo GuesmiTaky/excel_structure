@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="page-footer">Pages</div>
           <span className="title-page-footer">Accueil</span>
           <br />
-          <span className="title-page-footer">Nos Réalisation</span>
+          <span className="title-page-footer">Nos Réalisations</span>
           <br />
           <span className="title-page-footer">Contact</span>
         </div>
