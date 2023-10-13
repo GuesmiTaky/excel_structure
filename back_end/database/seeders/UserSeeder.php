@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             'name' => 'excel structure',
-            'email' => 'excel.structure',
+            'email' => 'excel.structure@gmail.fr',
             'password' => Hash::make('Abstructure2023++'),
         ]);
     }
