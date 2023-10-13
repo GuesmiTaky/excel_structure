@@ -60,17 +60,6 @@
   background-size: 100% 3px;
   background-position: center bottom;
 }
-
-/* .active {
-  color: #005645;
-  font-weight: 600;
-  line-height: 150%;
-  background-image: linear-gradient(#39af25, #39af25);
-  background-repeat: no-repeat;
-  background-size: 100% 3px;
-  background-position: center bottom;
-} */
-
 .active:hover::before {
   width: 0;
 }

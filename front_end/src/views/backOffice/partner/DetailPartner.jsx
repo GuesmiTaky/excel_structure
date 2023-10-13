@@ -5,7 +5,6 @@ import {
     Form,
     Input,
     Image,
-    Timeline
 } from 'antd';
 import './addPartner.css';
 import { useNavigate, useLocation } from 'react-router-dom';

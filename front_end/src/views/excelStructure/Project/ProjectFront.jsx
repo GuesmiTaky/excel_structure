@@ -55,13 +55,6 @@ const ProjectFront = () => {
     <div>
       <div className="image-background-main">
         <img src={Chateauneuf} alt="villa" />
-        {/* <div className="btn-contact">
-          <div className="title-btn-contact"> Constructions neuves</div>
-          <div className="sub-title-btn-contact">
-            {" "}
-            Accueil / Réalisations/Constructions neuves
-          </div>
-        </div> */}
       </div>
       <Spin
         style={{ marginTop: "20%", color: "green" }}

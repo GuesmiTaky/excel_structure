@@ -28,8 +28,6 @@ const AddNews = () => {
     const projetCreate = useSelector((state) => state.newsCreate);
 
     const {
-        loading: loadingCreate,
-        error: errorCreate,
         success: successCreate,
     } = projetCreate;
 

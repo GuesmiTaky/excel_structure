@@ -39,7 +39,7 @@ class PartnerController extends Controller
         return response()->json($partner, 200);
     }
 
-    // Créé une un partenaire
+    // Créé une partenaire
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), self::$rules, self::$errorMessages);

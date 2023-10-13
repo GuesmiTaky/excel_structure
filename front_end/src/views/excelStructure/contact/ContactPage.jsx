@@ -24,12 +24,6 @@ const ContactPage = () => {
     };
   }, []);
 
-  // const handleClickOpenMaps = () => {
-  //     const destinationAddress = "Excel Structure, France";
-  //     const googleMapsUrl = `https://www.google.com/maps/place/${encodeURIComponent(destinationAddress)}`;
-  //     window.open(googleMapsUrl, "_blank");
-  // };
-
   const handleClickOpenMaps = () => {
     window.open("/google-map?width=96%&height=650px&margin=2%", "_blank");
   };
@@ -55,10 +49,6 @@ const ContactPage = () => {
     <div>
       <div className="image-background-main">
         <img src={MALLEMORT} alt="villa" />
-        {/* <div className="btn-contact">
-          <div className="title-btn-contact">Contacter nous</div>
-          <div className="sub-title-btn-contact">Accueil / Contact</div>
-        </div> */}
       </div>
 
       <div>

@@ -23,7 +23,6 @@ import ListPartner from "./../views/backOffice/partner/ListPartner";
 import AddPartner from "./../views/backOffice/partner/AddPartner";
 import EditPartner from "./../views/backOffice/partner/EditPartner";
 import DetailPartner from "./../views/backOffice/partner/DetailPartner";
-import MapLeaflet from "../views/excelStructure/footer/MapLeaflet/MapLeaflet";
 import ReactGoogleMaps from "../views/excelStructure/footer/MapGoogle/ReactGoogleMaps";
 
 const router = createBrowserRouter([
@@ -136,10 +135,6 @@ const router = createBrowserRouter([
       {
         path: "/project-front/:id",
         element: <ProjectFront />,
-      },
-      {
-        path: "/leaflet-map",
-        element: <MapLeaflet />,
       },
       {
         path: "/google-map",

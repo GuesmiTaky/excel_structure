@@ -21,7 +21,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { createProjectAction, } from '../../../store/actions/projectActions';
 import './addProject.css';
-import { listCategoryAction } from '../../../store/actions/categoryActions';
 import French from 'rc-picker/lib/locale/fr_FR';
 import { apiUrl } from '../../../store/const';
 import axios from 'axios';
@@ -54,8 +53,6 @@ const AddProject = () => {
     const [options, setOptions] = useState([]);
 
     const {
-        loading: loadingCreate,
-        error: errorCreate,
         success: successCreate,
     } = projetCreate;
 

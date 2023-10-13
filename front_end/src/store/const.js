@@ -5,7 +5,7 @@ let API_BASE_URL;
 if (process.env.NODE_ENV === "development") {
   API_BASE_URL = process.env.REACT_APP_API_URL;
 } else if (process.env.NODE_ENV === "production") {
-  API_BASE_URL = "https://domaine-production.com";
+  API_BASE_URL = "https://back.ingenieurmarseilleaix.fr/";
 } else {
   throw new Error("Environnement inconnu");
 }

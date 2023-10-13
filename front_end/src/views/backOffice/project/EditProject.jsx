@@ -54,8 +54,6 @@ const EditProject = () => {
     const [options, setOptions] = useState([]);
 
     const {
-        loading: loadingUpdate,
-        error: errorUpdate,
         success: successUpdate,
     } = projetUpdate;
 

@@ -40,9 +40,9 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 5px 10px; /* Ajustement pour une marge de 10px à droite et à gauche */
+  margin: 5px 10px; 
   border-radius: 10px;
-  width: 150px; /* Largeur fixe pour le conteneur d'image */
+  width: 150px; 
   height: 200px;
 }
 

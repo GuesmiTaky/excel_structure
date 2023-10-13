@@ -130,12 +130,3 @@
         min-width: 100%;
     }
 }
-
-/* Styles pour les smartphones */
-/* @media (max-width: 768px) {
-    .news-group {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-} */

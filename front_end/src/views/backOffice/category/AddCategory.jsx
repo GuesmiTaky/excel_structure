@@ -19,8 +19,6 @@ const AddCategory = () => {
 
     const categoryCreate = useSelector((state) => state.categoryCreate);
     const {
-        loading: loadingCreate,
-        error: errorCreate,
         success: successCreate,
     } = categoryCreate;
 

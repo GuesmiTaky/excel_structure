@@ -37,15 +37,6 @@ export default function Card(props) {
     >
       <div className="titleContainer">
         <span id="rating">
-          {/*getStars().map((element, index) => {
-            return <span> {element} </span>;
-          })*/}
-
-          {/*<Star height="20px" />
-          <Star height="20px" />
-          <Star height="20px" />
-          <Star height="20px" />
-        <Star height="20px" />*/}
         </span>
         <div id="title" style={{ right: CARDTITLEPOS }}>
           TITLE

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import villa from "../../../images/villa.png";
 import "./listCatgoryMain.css";
 import { Pagination, Skeleton } from "antd";
 import MoreDetail from "./../MainPage/MoreDetail/MoreDetail";
@@ -185,12 +184,6 @@ const ListCategoryMain = () => {
         <div className="list-category-main">
           <div className="image-background-main">
             <img src={villa3d} alt="villa" />
-            {/* <div className="btn-contact">
-              <div className="title-btn-contact">Nos Réalisations</div>
-              <div className="sub-title-btn-contact">
-                Accueil / Réalisations
-              </div>
-            </div> */}
           </div>
           {loadingSpiner ? (
             <div className="skeleton-category">

@@ -145,61 +145,6 @@ const EditPartner = () => {
             >
               <Input />
             </Form.Item>
-
-            {/* <Form.Item label="Image">
-              <Upload
-                listType="picture-card"
-                fileList={fileList}
-                onPreview={handlePreview}
-                onChange={handleChange}
-                beforeUpload={() => false}
-                aria-label="Upload your image"
-              >
-                {fileList.length === 1 ? null : uploadButton}
-              </Upload>
-              <Modal
-                open={previewOpen}
-                title={previewTitle}
-                footer={null}
-                onCancel={handleCancel}
-              >
-                <img
-                  alt="example"
-                  style={{
-                    width: "100%",
-                  }}
-                  src={previewImage}
-                />
-              </Modal>
-            </Form.Item>
-
-            <>
-              <Upload
-                listType="picture-card"
-                fileList={fileList}
-                onPreview={handlePreview}
-                onChange={handleChange}
-                beforeUpload={() => false}
-                aria-label="Upload your image"
-              >
-                {fileList.length === 1 ? null : uploadButton}
-              </Upload>
-              <Modal
-                open={previewOpen}
-                title={previewTitle}
-                footer={null}
-                onCancel={handleCancel}
-              >
-                <img
-                  alt="example"
-                  style={{
-                    width: "100%",
-                  }}
-                  src={previewImage}
-                />
-              </Modal>
-            </> */}
-
             <>
               <Upload
                 fileList={fileList}

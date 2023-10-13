@@ -34,8 +34,6 @@ const AddPartner = () => {
 
     const partnerCreate = useSelector((state) => state.partnerCreate);
     const {
-        loading: loadingCreate,
-        error: errorCreate,
         success: successCreate,
     } = partnerCreate;
 

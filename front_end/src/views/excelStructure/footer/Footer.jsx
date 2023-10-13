@@ -1,7 +1,6 @@
 import React from "react";
 import "./footer.css";
 import Logo from "./../../../assets/Logo";
-import MapLeaflet from "./MapLeaflet/MapLeaflet";
 import ReactGoogleMaps from "./MapGoogle/ReactGoogleMaps";
 
 const Footer = () => {
@@ -34,7 +33,6 @@ const Footer = () => {
         <div className="three-child-footer">
           <div className="rejoindre-nos-footer">Rejoignez nous en un clic</div>
           <ReactGoogleMaps />
-          {/* <MapLeaflet /> */}
         </div>
       </div>
 
