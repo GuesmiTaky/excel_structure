@@ -247,7 +247,7 @@ const AddProject = () => {
                     label="Description "
                     name="description"
                   >
-                    <TextArea rows={4} maxLength={50} />
+                    <TextArea rows={4} maxLength={600} />
                   </Form.Item>
                 </Col>
               </Row>
