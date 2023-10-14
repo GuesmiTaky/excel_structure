@@ -104,27 +104,33 @@ const ProjectFront = () => {
                   <span className="col-12 col-md-6 item-card-title">
                     Date :
                   </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.date}
-                  </span>
+                  {projectDetails && projectDetails.date && (
+                    <span className="col-12 col-md-6 item-card-data">
+                      {new Date(projectDetails.date).getFullYear()}
+                    </span>
+                  )}
                 </div>
 
                 <div className="row">
                   <span className="col-12 col-md-6 item-card-title">
                     Surface de plancher :
                   </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.surface} m²
-                  </span>
+                  {projectDetails && projectDetails.surface && (
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.surface} m²
+                    </span>
+                  )}
                 </div>
 
                 <div className="row">
                   <span className="col-12 col-md-6 item-card-title">
                     Montant de projet :
                   </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.amount} €
-                  </span>
+                  {projectDetails && projectDetails.amount && (
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.amount} €
+                    </span>
+                  )}
                 </div>
 
                 <div className="row">

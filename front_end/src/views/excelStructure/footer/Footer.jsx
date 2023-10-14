@@ -14,10 +14,10 @@ const Footer = () => {
           <span className="desc-footer">
             Nous sommes un bureau d'études de structures basé à Marseille,
             spécialisé dans l'analyse et la conception de bâtiments en béton
-            armé, métallique et en bois. Notre équipe d'experts offre des
+            armé, en métal et en bois. Notre équipe d'experts propose des
             solutions techniques précises et innovantes pour vos projets de
-            réhabilitation et de construction neuve. Faites confiance à notre
-            expertise pour des réalisations optimisées, durables et de qualité.
+            réhabilitation et de construction neuve. Faites-nous confiance pour
+            des réalisations optimisées, durables et de grande qualité.
           </span>
         </div>
 
@@ -38,7 +38,7 @@ const Footer = () => {
 
       <div className="horizontal-bar-footer"></div>
       <div className="footer-footer">
-        <div className="title-f">Copyright © Excel Structures Ingénierie</div>
+        <div className="title-f">Copyright © Excel Structure Ingénierie</div>
         <div className="desc-f">
           S.A.S EXCEL STRUCTURE INGENIERIE Aix-en-Provence B 884 978 644 Siret
           88497864400018 CODE APE 7112B

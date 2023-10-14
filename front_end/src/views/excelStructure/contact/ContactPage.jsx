@@ -50,23 +50,19 @@ const ContactPage = () => {
       <div className="image-background-main">
         <img src={MALLEMORT} alt="villa" />
       </div>
-
       <div>
         <div className="title-contact-header">Contacter nous</div>
         <div className="sub-title-contact-header">Accueil / Contact</div>
       </div>
-
       <div className="title-contact">
         Nous sommes toujours à votre disposition
       </div>
-
       <div className="sub-title-contact">
         Pour bénéficier de la formule qui vous correspond le mieux,
-        <b>contactez nous par Téléphone</b> ,
+        <b> contactez nous par téléphone</b>
         <br />
-        ou de vous rendre à <b>nos locaux</b>.
+        ou rendez-vous à <b>nos locaux</b>.
       </div>
-
       <div className="main-contact">
         <div className="carte-france-container">
           <img
@@ -85,13 +81,16 @@ const ContactPage = () => {
               <div className="circle-contact">
                 <Mail />
               </div>
-              <div className="text-item-contact">
-                excelstructureingenierie@gmail.com
-                <br />
+              <div
+                className="text-item-contact"
+                style={{ marginBottom: "20px" }}
+              >
                 contact@excelstructure.fr
               </div>
             </div>
-
+            <div className="text-item-contact">
+              excelstructureingenierie@gmail.com
+            </div>
             <div className="item-card-contact">
               <div className="circle-contact">
                 <Phone />
