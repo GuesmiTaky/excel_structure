@@ -53,8 +53,9 @@ const ListCategory = () => {
       title: "Action",
       key: "action",
       render: (_, record) => (
-        <Space size="middle">
+        <Space size="small">
           <Button
+            size="small"
             type="primary"
             style={{
               display: "flex",
@@ -67,6 +68,7 @@ const ListCategory = () => {
             onClick={() => handleView(record.id, record)}
           />
           <Button
+            size="small"
             type="primary"
             style={{
               display: "flex",
@@ -79,6 +81,7 @@ const ListCategory = () => {
             onClick={() => handleEdit(record.id, record)}
           />
           <Button
+            size="small"
             type="primary"
             style={{
               display: "flex",

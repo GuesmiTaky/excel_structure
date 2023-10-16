@@ -12,6 +12,7 @@ const NavBarMain = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
+    if (isMenuOpen) toggleMenu();
   };
 
   useEffect(() => {

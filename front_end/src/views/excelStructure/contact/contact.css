@@ -250,6 +250,10 @@
     top: calc(80% - 50px);
   }
 
+  .text-item-contact {
+    font-size: 14px;
+  }
+
   .title-btn-contact {
     font-size: 24px;
     line-height: 31px;
@@ -281,7 +285,7 @@
   .card-contact {
     width: 90%;
     height: auto;
-    padding: 40px 20px;
+    padding: 30px 0;
   }
 
   .group-btn-contact {
@@ -300,8 +304,9 @@
   }
 
   .circle-contact {
-    width: 60px;
-    height: 60px;
+    background-color: transparent;
+    margin-left: 5px;
+    margin-right: -10px;
   }
 
   .image-background-main img {

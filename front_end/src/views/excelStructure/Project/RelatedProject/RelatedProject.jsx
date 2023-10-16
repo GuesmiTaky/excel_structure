@@ -53,15 +53,9 @@ const RelatedProject = ({ project, onProjectClick }) => {
 
   return (
     <>
-      <Spin
-        style={{ marginTop: "20%", color: "green" }}
-        spinning={loadingSpiner}
-        tip=""
-        size="large"
-      >
+
         {loadingSpiner ? (
           <>
-            <div className="title">Projets Liés</div>
             <div className="row-skeleton-related-project">
               <Skeleton.Image
                 className="container-skeleton-related-project"
@@ -71,25 +65,28 @@ const RelatedProject = ({ project, onProjectClick }) => {
             </div>
           </>
         ) : (
-          <div className="related-wrapper">
-            <div className="title">Projets Liés</div>
-            <div className="related-image-row">
-              {relatedProjects.map((relatedProject, index) => (
-                <div
-                  className="related-image-container"
-                  key={index}
-                  onClick={() => findProject(relatedProject.id)}
-                >
-                  <img src={relatedProject.src} alt={relatedProject.alt} />
-                  <div className="related-image-title">
-                    {relatedProject.title}
-                  </div>
+          <>
+            {relatedProjects && relatedProjects.length > 0 && (
+              <div className="related-wrapper">
+                <div className="title">Projets Liés</div>
+                <div className="related-image-row">
+                  {relatedProjects.map((relatedProject, index) => (
+                    <div
+                      className="related-image-container"
+                      key={index}
+                      onClick={() => findProject(relatedProject.id)}
+                    >
+                      <img src={relatedProject.src} alt={relatedProject.alt} />
+                      <div className="related-image-title">
+                        {relatedProject.title}
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
+              </div>
+            )}
+          </>
         )}
-      </Spin>
     </>
   );
 };

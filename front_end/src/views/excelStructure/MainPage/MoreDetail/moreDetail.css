@@ -1,11 +1,9 @@
 .main-more-detail {
   position: relative;
-  /* overflow: hidden; */
   border-radius: 40px;
   background: #005645;
   width: 90%;
   height: 422px;
-  /* flex-shrink: 0; */
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -13,6 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
+  margin-top: 2%;
 }
 
 .content-more-detail {

@@ -86,11 +86,10 @@ const ContactPage = () => {
                 style={{ marginBottom: "20px" }}
               >
                 contact@excelstructure.fr
+                <br />excelstructureingenierie@gmail.com
               </div>
             </div>
-            <div className="text-item-contact">
-              excelstructureingenierie@gmail.com
-            </div>
+            <div className="text-item-contact"></div>
             <div className="item-card-contact">
               <div className="circle-contact">
                 <Phone />

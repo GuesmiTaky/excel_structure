@@ -73,76 +73,91 @@ const ProjectFront = () => {
           <div className="group-card-desc">
             <div className="first-card-desc-project">
               <div className="group-item-card-title">
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Maître d’ouvrage :
-                  </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.owner}
-                  </span>
-                </div>
+                {projectDetails.owner && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Maître d’ouvrage :
+                    </span>
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.owner}
+                    </span>
+                  </div>
+                )}
 
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Architecte :
-                  </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.architect}
-                  </span>
-                </div>
+                {projectDetails.architect && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Architecte :
+                    </span>
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.architect}
+                    </span>
+                  </div>
+                )}
 
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Mission d’exécution :
-                  </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.execution_mission}
-                  </span>
-                </div>
+                {projectDetails.execution_mission && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Mission d’exécution :
+                    </span>
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.execution_mission}
+                    </span>
+                  </div>
+                )}
 
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Date :
-                  </span>
-                  {projectDetails && projectDetails.date && (
+                {projectDetails.date && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Date :
+                    </span>
                     <span className="col-12 col-md-6 item-card-data">
                       {new Date(projectDetails.date).getFullYear()}
                     </span>
-                  )}
-                </div>
+                  </div>
+                )}
 
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Surface de plancher :
-                  </span>
-                  {projectDetails && projectDetails.surface && (
-                    <span className="col-12 col-md-6 item-card-data">
-                      {projectDetails.surface} m²
+                {projectDetails.surface && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Surface de plancher :
                     </span>
-                  )}
-                </div>
-
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Montant de projet :
-                  </span>
-                  {projectDetails && projectDetails.amount && (
                     <span className="col-12 col-md-6 item-card-data">
-                      {projectDetails.amount} €
+                      {new Intl.NumberFormat("fr-FR").format(
+                        projectDetails.surface
+                      )}{" "}
+                      m²
                     </span>
-                  )}
-                </div>
+                  </div>
+                )}
 
-                <div className="row">
-                  <span className="col-12 col-md-6 item-card-title">
-                    Adresse du projet :
-                  </span>
-                  <span className="col-12 col-md-6 item-card-data">
-                    {projectDetails.adresse}
-                  </span>
-                </div>
+                {projectDetails.amount && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Montant de projet :
+                    </span>
+                    <span className="col-12 col-md-6 item-card-data">
+                      {new Intl.NumberFormat("fr-FR").format(
+                        projectDetails.amount
+                      )}{" "}
+                      €
+                    </span>
+                  </div>
+                )}
+
+                {projectDetails.adresse && (
+                  <div className="row">
+                    <span className="col-12 col-md-6 item-card-title">
+                      Adresse du projet :
+                    </span>
+                    <span className="col-12 col-md-6 item-card-data">
+                      {projectDetails.adresse}
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
+
             <div className="seconde-card-desc-project">
               <span className="title-desc-project-card">
                 {projectDetails.name}
