@@ -67,7 +67,7 @@ const ProjectFront = () => {
         </div>
         <div className="sub-title-contact-header">
           {" "}
-          Accueil / Réalisations/{projectDetails.category?.name}
+          Accueil / Réalisations / {projectDetails.category?.name}
         </div>
         <div className="project-front-content">
           <div className="group-card-desc">
