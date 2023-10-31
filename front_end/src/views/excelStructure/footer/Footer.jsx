@@ -30,10 +30,10 @@ const Footer = () => {
           <span className="title-page-footer">Contact</span>
         </div>
 
-        <div className="three-child-footer">
+        {/* <div className="three-child-footer">
           <div className="rejoindre-nos-footer">Rejoignez nous en un clic</div>
           <ReactGoogleMaps />
-        </div>
+        </div> */}
       </div>
 
       <div className="horizontal-bar-footer"></div>

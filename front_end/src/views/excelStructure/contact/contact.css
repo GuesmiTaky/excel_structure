@@ -23,7 +23,7 @@
 }
 
 .title-btn-contact {
-  font-family: "DM Serif Display";
+  font-family: "Poppins";
   font-size: 42px;
   font-weight: 400;
   line-height: 63px;
@@ -33,7 +33,7 @@
 }
 
 .sub-title-btn-contact {
-  font-family: "Jost";
+  font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
   line-height: 33px;
@@ -43,8 +43,8 @@
 }
 
 .title-contact-header {
-  font-family: "DM Serif Display";
-  font-size: 50px;
+  font-family: "Poppins";
+  font-size: 40px;
   font-weight: 400;
   line-height: 69px;
   letter-spacing: 0.01em;
@@ -54,8 +54,8 @@
 }
 
 .sub-title-contact-header {
-  font-family: "Open Sans";
-  font-size: 24px;
+  font-family: "Poppins";
+  font-size: 17px;
   font-weight: 500;
   line-height: 33px;
   letter-spacing: 0em;
@@ -64,8 +64,8 @@
 }
 
 .title-contact {
-  font-family: "DM Serif Display";
-  font-size: 50px;
+  font-family: "Poppins";
+  font-size: 40px;
   font-weight: 400;
   line-height: 69px;
   letter-spacing: 0.01em;
@@ -74,8 +74,8 @@
 }
 
 .sub-title-contact {
-  font-family: "Open Sans";
-  font-size: 24px;
+  font-family: "Poppins";
+  font-size: 17px;
   font-weight: 500;
   line-height: 33px;
   letter-spacing: 0em;
@@ -126,7 +126,7 @@
 
 .text-item-contact {
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
@@ -148,7 +148,7 @@
   gap: 10px;
   background-color: #ffffff;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0.02em;
@@ -169,7 +169,7 @@
   gap: 10px;
   background-color: #006355;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 23px;
   letter-spacing: 0.02em;
@@ -207,7 +207,7 @@
   }
 
   .sub-title-contact {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 26px;
   }
 
@@ -270,7 +270,7 @@
   }
 
   .sub-title-contact {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 26px;
   }
 

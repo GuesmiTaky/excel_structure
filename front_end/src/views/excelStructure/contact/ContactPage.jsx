@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./contact.css";
 import MALLEMORT from "../../../images/MALLEMORT.PNG";
-import image20 from "../../../images/image20.jpg";
 import Linkedin from "../../../assets/Linkedin";
 import Phone from "../../../assets/Phone";
 import Mobile from "../../../assets/Mobile";
@@ -24,8 +23,16 @@ const ContactPage = () => {
     };
   }, []);
 
+  // const handleClickOpenMaps = () => {
+  //   window.open("/google-map?width=96%&height=300px&margin=2%", "_blank");
+  // };
+
   const handleClickOpenMaps = () => {
-    window.open("/google-map?width=96%&height=650px&margin=2%", "_blank");
+    const destinationAddress = "Excel Structure, France";
+    const googleMapsUrl = `https://www.google.com/maps/dir//${encodeURIComponent(
+      destinationAddress
+    )}`;
+    window.open(googleMapsUrl, "_blank");
   };
 
   const handleClickOpenItinerary = () => {
@@ -81,12 +88,13 @@ const ContactPage = () => {
               <div className="circle-contact">
                 <Mail />
               </div>
-              <div
-                className="text-item-contact"
-                style={{ marginBottom: "20px" }}
-              >
-                contact@excelstructure.fr
-                <br />excelstructureingenierie@gmail.com
+              <div className="text-item-contact">
+                <a
+                  style={{ color: "gray" }}
+                  href="mailto:contact@excelstructure.fr"
+                >
+                  contact@excelstructure.fr
+                </a>
               </div>
             </div>
             <div className="text-item-contact"></div>
@@ -94,14 +102,14 @@ const ContactPage = () => {
               <div className="circle-contact">
                 <Phone />
               </div>
-              <div className="text-item-contact">33 4 94 49 62 18</div>
+              <div className="text-item-contact">04 84 49 62 18</div>
             </div>
 
             <div className="item-card-contact">
               <div className="circle-contact">
                 <Mobile />
               </div>
-              <div className="text-item-contact">33 6 67 90 01 84</div>
+              <div className="text-item-contact">06 67 90 01 84</div>
             </div>
 
             <div className="item-card-contact">

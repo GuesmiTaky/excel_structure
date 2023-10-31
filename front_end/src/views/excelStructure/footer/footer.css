@@ -8,18 +8,20 @@
   flex-direction: row;
   margin: 5% 5% 0 5%;
   justify-content: space-around;
+  align-items: center;
 }
 
 .first-child-footer {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 50%;
+  align-items: center;
 }
 
 .second-child-footer {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 50%;
   align-items: center;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .rejoindre-nos-footer {
-  font-family: "DM Serif Display";
+  font-family: "Poppins";
   font-size: 25px;
   font-weight: 400;
   line-height: 39px;
@@ -46,14 +48,13 @@
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #002e27;
-
   margin-top: 15px;
 }
 
 .page-footer {
-  font-family: "DM Serif Display";
+  font-family: "Poppins";
   font-size: 25px;
   font-weight: 400;
   line-height: 31px;
@@ -70,7 +71,7 @@
   letter-spacing: 0.01em;
   text-align: left;
   color: #4d5053;
-  height: 30px;
+  height: 15px;
 }
 
 .horizontal-bar-footer {
@@ -217,6 +218,7 @@
   .second-child-footer {
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 15px;
   }
 
   .three-child-footer {

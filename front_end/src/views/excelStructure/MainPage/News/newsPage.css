@@ -1,132 +1,130 @@
 .news {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5%;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+  position: relative;
 }
 
 .desc {
-    display: flex;
-    width: 675px;
-    height: 79px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    text-align: center;
+  display: flex;
+  width: 675px;
+  height: 79px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
 }
 
 .news-group {
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
 }
 
 .text-news {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-item {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .rectangle-news {
-    width: 92px;
-    height: 100%;
-    flex-shrink: 0;
-    background: rgba(0, 99, 85, 0.05);
-    margin: 0 2% 0 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: none;
+  width: 92px;
+  height: 100%;
+  flex-shrink: 0;
+  background: rgba(0, 99, 85, 0.05);
+  margin: 0 2% 0 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 
 .date-news-num {
-    font-size: 40px;
-    font-family: 'Poppins';
-    font-weight: 600;
-    line-height: 26px;
-    text-transform: lowercase;
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 26px;
+  text-transform: lowercase;
 }
 
 .date-news-text {
-    font-size: 24px;
-    font-family: 'Poppins';
-    line-height: 26px;
-    text-transform: lowercase;
+  font-size: 24px;
+  font-family: "Poppins";
+  line-height: 26px;
+  text-transform: lowercase;
 }
 
 .title-news {
-    color: #192644;
-    font-size: 16px;
-    font-family: 'Arimo';
-    font-weight: 700;
-
+  color: #192644;
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 700;
 }
 
 .desc-news {
-    color: var(--para-color, #9FA4BB);
-    font-size: 14px;
-    font-family: 'Poppins';
-    line-height: 26px;
+  color: var(--para-color, #9fa4bb);
+  font-size: 14px;
+  font-family: "Poppins";
+  line-height: 26px;
 }
 
 .vertical-bar-news {
-    width: 5px !important;
-    min-width: 5px;
-    height: 100%;
+  width: 5px !important;
+  min-width: 5px;
+  height: 100%;
 }
 
 .news-item-1 .vertical-bar-news {
-    background: #006355;
+  background: #006355;
 }
 
 .news-item-2 .vertical-bar-news {
-    background-color: #41B125;
+  background-color: #41b125;
 }
 
 .news-item-3 .vertical-bar-news {
-    background-color: #000;
+  background-color: #000;
 }
 
 .date-news-num {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .news-item-1 .date-news-num {
-    color: #006355;
+  color: #006355;
 }
 
 .news-item-2 .date-news-num {
-    color: #41B125;
+  color: #41b125;
 }
 
 .news-item-3 .date-news-num {
-    color: #000;
+  color: #000;
 }
 
 .news-item-1 .date-news-text {
-    color: #006355;
+  color: #006355;
 }
 
 .news-item-2 .date-news-text {
-    color: #41B125;
+  color: #41b125;
 }
 
 .news-item-3 .date-news-text {
-    color: #000;
+  color: #000;
 }
-
 
 /* Styles pour les tablettes */
 @media (max-width: 899px) {
-    .news-group {
-        min-height: 210px;
-        min-width: 100%;
-    }
+  .news-group {
+    min-height: 210px;
+    min-width: 100%;
+  }
 }

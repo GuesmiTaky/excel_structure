@@ -10,6 +10,7 @@
     "antd": "^5.5.1",
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
+    "fontsource-poppins": "^4.0.0",
     "leaflet": "^1.9.4",
     "moment": "^2.29.4",
     "rc-picker": "^3.12.0",
