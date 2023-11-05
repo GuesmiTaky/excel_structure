@@ -6,9 +6,10 @@
 .main-footer {
   display: flex;
   flex-direction: row;
-  margin: 5% 5% 3% 5%;
+  margin: 5% 5% 0 5%;
   justify-content: space-around;
   align-items: center;
+  align-items: flex-end;
 }
 
 .first-child-footer {
@@ -23,6 +24,7 @@
   flex-direction: column;
   width: 33%;
   align-items: center;
+  margin-bottom: 2%;
 }
 
 .three-child-footer {
@@ -61,6 +63,7 @@
   letter-spacing: 0em;
   text-align: left;
   color: #292f36;
+  height: 18px;
 }
 
 .title-page-footer {
@@ -71,7 +74,7 @@
   letter-spacing: 0.01em;
   text-align: left;
   color: #4d5053;
-  height: 15px;
+  height: 5px;
 }
 
 .horizontal-bar-footer {
@@ -87,6 +90,7 @@
   margin-bottom: 20px;
   margin-left: 5%;
   align-items: center;
+  justify-content: center;
 }
 
 .title-f {
@@ -101,7 +105,7 @@
 
 .desc-f {
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
@@ -134,7 +138,7 @@
   }
 
   .desc-f {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;
@@ -148,7 +152,7 @@
   .main-footer {
     display: flex;
     flex-direction: column;
-    margin: 5% 5% 3% 5%;
+    margin: 5% 5% 0 5%;
   }
 
   .first-child-footer {
@@ -205,7 +209,7 @@
   .main-footer {
     display: flex;
     flex-direction: column;
-    margin: 5% 5% 3% 5%;
+    margin: 5% 5% 0 5%;
   }
 
   .first-child-footer {
@@ -252,7 +256,7 @@
   }
 
   .desc-f {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     line-height: 20px;
     text-align: center;

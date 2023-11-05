@@ -34,7 +34,7 @@ const Footer = () => {
           {/* <div className="rejoindre-nos-footer">Rejoignez nous en un clic</div>
           <ReactGoogleMaps /> */}
           <div className="contact-footer">
-            30 Avenue des Olives - 13013 Marseille
+            30 Av. des Olives - 13013 Marseille
             <br />
             Tel: 0667900184/0484496218
             <br />
