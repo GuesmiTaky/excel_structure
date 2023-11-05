@@ -7,7 +7,7 @@ import Mobile from "../../../assets/Mobile";
 import Mail from "../../../assets/Mail";
 import Itinerary from "../../../assets/Itinerary";
 import Footer from "../footer/Footer";
-import CarteFrance from "./../../../assets/carteFrance.svg";
+import CarteFrance from "./../../../assets/carte_france.svg";
 
 const ContactPage = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
