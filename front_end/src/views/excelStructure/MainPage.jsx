@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Domain from "./MainPage/Domain/Domain";
 import NewsPage from "./MainPage/News/NewsPage";
 import MoreDetail from "./MainPage/MoreDetail/MoreDetail";
@@ -11,13 +11,14 @@ import GlobalLoader from "./globalLoader/GlobalLoader";
 
 const MainPage = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const pageRef = useRef();
 
   const toggleLoading = (state) => {
     setIsLoading(state);
   };
 
   return (
-    <>
+    <div ref={pageRef}>
       <HeroSection />
       <div className="main-page-content">
         <Domain />
@@ -26,9 +27,9 @@ const MainPage = () => {
         <Partners toggleLoading={toggleLoading} />
         <NewsPage toggleLoading={toggleLoading} />
         <MoreDetail />
-        <Footer />
+        <Footer pageRef={pageRef} />
       </div>
-    </>
+    </div>
   );
 };
 
