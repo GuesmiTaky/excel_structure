@@ -38,7 +38,7 @@ const Login = () => {
                 description: error,
             });
         }
-    }, [userInfo, error, location.state?.from, messageShown]);
+    }, [userInfo, error, location.state?.from, messageShown, messageApi, api]);
 
     const enterLoading = async (index, values) => {
         setLoadings((prevLoadings) => {

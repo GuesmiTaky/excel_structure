@@ -23,10 +23,6 @@ const ContactPage = () => {
     };
   }, []);
 
-  // const handleClickOpenMaps = () => {
-  //   window.open("/google-map?width=96%&height=300px&margin=2%", "_blank");
-  // };
-
   const handleClickOpenMaps = () => {
     const destinationAddress = "Excel Structure, France";
     const googleMapsUrl = `https://www.google.com/maps/dir//${encodeURIComponent(

@@ -26,12 +26,12 @@ const ListNews = () => {
   const [loadingSpiner, setLoadingSpiner] = useState(true);
   const [open, setOpen] = useState(false);
   const [confirmLoading, setConfirmLoading] = useState(false);
-  const [modalText, setModalText] = useState(
+  const [modalText] = useState(
     "Voulez-vous vraiment supprimer cet élément?"
   );
   const [dataModal, setDataModal] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
-  const [pageSize, setPageSize] = useState(10);
+  const [pageSize] = useState(10);
   const [totalPage, setTotalPage] = useState(null);
 
   const newsDelete = useSelector((state) => state.newsDelete);

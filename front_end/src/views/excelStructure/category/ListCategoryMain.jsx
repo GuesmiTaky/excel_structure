@@ -18,7 +18,7 @@ const ListCategoryMain = () => {
   const [showAllProjects, setShowAllProjects] = useState(true);
   const [projectsPerPage] = useState(8);
   const [totalProjectsCount, setTotalProjectsCount] = useState(0);
-  const [perPage, setPerPage] = useState(8);
+  const [perPage] = useState(8);
   const [loadingSpiner, setLoadingSpiner] = useState(true);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

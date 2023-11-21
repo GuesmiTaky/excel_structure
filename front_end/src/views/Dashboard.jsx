@@ -8,7 +8,6 @@ const Dashboard = () => {
         return token ? true : false;
     };
 
-    // Utilisez useNavigate pour la redirection
     const navigate = useNavigate();
 
     useEffect(() => {

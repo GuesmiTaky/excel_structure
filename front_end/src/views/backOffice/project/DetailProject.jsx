@@ -15,9 +15,9 @@ const DetailProject = () => {
   const project = location.state && location.state.project;
   const [imageUrl, setImageUrl] = useState([]);
   const [goToSlide, setGoToSlide] = useState(0);
-  const [offsetRadius, setOffsetRadius] = useState(2);
-  const [showNavigation, setShowNavigation] = useState(true);
-  const [animationConfig, setAnimationConfig] = useState(config.gentle);
+  const [offsetRadius] = useState(2);
+  const [showNavigation] = useState(true);
+  const [animationConfig] = useState(config.gentle);
   const [dataImageURL, setDataImageURL] = useState([]);
 
   useEffect(() => {

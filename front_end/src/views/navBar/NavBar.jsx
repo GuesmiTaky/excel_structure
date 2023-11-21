@@ -19,7 +19,7 @@ const NavBar = () => {
 
     const [open, setOpen] = useState(false);
     const [confirmLoading, setConfirmLoading] = useState(false);
-    const [modalText, setModalText] = useState('Êtes-vous sûr de vouloir vous déconnecter de votre session ?');
+    const [modalText] = useState('Êtes-vous sûr de vouloir vous déconnecter de votre session ?');
     const [selectedKey, setSelectedKey] = useState(localStorage.getItem("selectedMenuKey") || "1");
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const NavBar = () => {
                 },
             });
         }
-    }, [location]);
+    }, [location, messageApi]);
 
     const handleSelect = (selectedItem) => {
         setSelectedKey(selectedItem.key);

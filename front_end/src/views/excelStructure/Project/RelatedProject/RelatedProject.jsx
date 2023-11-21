@@ -3,7 +3,7 @@ import "./relatedProject.css";
 import axios from "axios";
 import { apiUrl, api_url_pic } from "../../../../store/const";
 import { useNavigate } from "react-router-dom";
-import { Skeleton, Spin } from "antd";
+import { Skeleton } from "antd";
 
 const RelatedProject = ({ project, onProjectClick }) => {
   const navigate = useNavigate();

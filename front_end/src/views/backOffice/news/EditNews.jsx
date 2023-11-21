@@ -31,8 +31,6 @@ const EditNews = () => {
     const projetUpdate = useSelector((state) => state.newsUpdate);
 
     const {
-        loading: loadingUpdate,
-        error: errorUpdate,
         success: successUpdate,
     } = projetUpdate;
 

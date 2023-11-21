@@ -9,7 +9,7 @@ const NewsPage = ({ toggleLoading }) => {
   const [dataNews, setDataNews] = useState(null);
   const [formattedData, setFormattedData] = useState([]);
   const [currentDisplay, setCurrentDisplay] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [isAnimating] = useState(false);
   const [intervalId, setIntervalId] = useState(null);
 
   useEffect(() => {

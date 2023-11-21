@@ -24,14 +24,6 @@ const Footer = ({ pageRef }) => {
           <div className="logo-footer">
             <Logo />
           </div>
-          {/* <span className="desc-footer">
-            Nous sommes un bureau d'études de structures basé à Marseille,
-            spécialisé dans l'analyse et la conception de bâtiments en béton
-            armé, en métal et en bois. Notre équipe d'experts propose des
-            solutions techniques précises et innovantes pour vos projets de
-            réhabilitation et de construction neuve. Faites-nous confiance pour
-            des réalisations optimisées, durables et de grande qualité.
-          </span> */}
         </div>
 
         <div className="second-child-footer">
@@ -62,12 +54,6 @@ const Footer = ({ pageRef }) => {
           >
             Contact
           </Link>
-          {/* <div className="page-footer">Pages</div>
-          <span className="title-page-footer">Accueil</span>
-          <br />
-          <span className="title-page-footer">Nos Réalisations</span>
-          <br />
-          <span className="title-page-footer">Contact</span> */}
         </div>
 
         <div className="three-child-footer">
