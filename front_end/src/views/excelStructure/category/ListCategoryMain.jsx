@@ -122,7 +122,7 @@ const ListCategoryMain = () => {
         console.error("Error fetching categories: ", error);
       });
     setCurrentPage(1);
-  }, []);
+  }, [perPage]);
 
   const handleClick = (index, id) => {
     setSelectedCategory(index);
