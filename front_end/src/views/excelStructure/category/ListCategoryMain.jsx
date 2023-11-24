@@ -91,14 +91,22 @@ const ListCategoryMain = () => {
   };
 
   const handlePageChange = (page) => {
+    console.log(
+      "🚀 ~ file: ListCategoryMain.jsx:94 ~ handlePageChange ~ page:",
+      page
+    );
+    console.log("selectedCategory ===>", typeof selectedCategory);
+    console.log("selectedCategory ===>", selectedCategory);
     setCurrentPage(page);
     if (selectedCategory !== 0) {
+      console.log("test if");
       fetchProjectsDataByCategory(
         formattedData[selectedCategory].id,
         page,
         perPage
       );
     } else {
+      console.log("test if");
       fetchProjectsData(page, perPage);
     }
   };
