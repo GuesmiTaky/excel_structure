@@ -91,22 +91,14 @@ const ListCategoryMain = () => {
   };
 
   const handlePageChange = (page) => {
-    console.log(
-      "🚀 ~ file: ListCategoryMain.jsx:94 ~ handlePageChange ~ page:",
-      page
-    );
-    console.log("selectedCategory ===>", typeof selectedCategory);
-    console.log("selectedCategory ===>", selectedCategory);
     setCurrentPage(page);
     if (selectedCategory !== 0) {
-      console.log("test if");
       fetchProjectsDataByCategory(
         formattedData[selectedCategory].id,
         page,
         perPage
       );
     } else {
-      console.log("test else");
       fetchProjectsData(page, perPage);
     }
   };
@@ -133,8 +125,7 @@ const ListCategoryMain = () => {
   }, [perPage]);
 
   const handleClick = (index, id) => {
-    console.log("handleClick index", index);
-    setSelectedCategory(index + 1);
+    setSelectedCategory(index);
     setProjects([]);
     fetchProjectsDataByCategory(id, 1, perPage);
     setCurrentPage(1);
