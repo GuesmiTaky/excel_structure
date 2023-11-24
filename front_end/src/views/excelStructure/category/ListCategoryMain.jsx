@@ -106,7 +106,7 @@ const ListCategoryMain = () => {
         perPage
       );
     } else {
-      console.log("test if");
+      console.log("test else");
       fetchProjectsData(page, perPage);
     }
   };
@@ -133,7 +133,8 @@ const ListCategoryMain = () => {
   }, [perPage]);
 
   const handleClick = (index, id) => {
-    setSelectedCategory(index);
+    console.log("handleClick index", index);
+    setSelectedCategory(id);
     setProjects([]);
     fetchProjectsDataByCategory(id, 1, perPage);
     setCurrentPage(1);
