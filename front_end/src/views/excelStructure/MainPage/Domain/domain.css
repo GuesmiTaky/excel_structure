@@ -73,6 +73,15 @@
   border: 4px solid #005645;
 }
 
+.first-number {
+  color: #192644;
+  text-align: right;
+  font-size: 90px;
+  font-family: "Poppins";
+  font-weight: 700;
+  transform: translate(36%);
+}
+
 .number {
   color: #192644;
   text-align: right;
@@ -113,6 +122,15 @@
     font-family: "Poppins";
     font-weight: 500;
     transform: translate(46%);
+  }
+
+  .first-number {
+    color: #192644;
+    text-align: right;
+    font-size: 60px;
+    font-family: "Poppins";
+    font-weight: 500;
+    transform: translate(36%);
   }
 }
 

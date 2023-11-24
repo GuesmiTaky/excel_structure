@@ -11,7 +11,7 @@ const Domain = () => {
             <div className='domain-el'>
                 <div className='domain-element'>
                     <div className="rectangle">
-                        <div className='number'>
+                        <div className='first-number'>
                             01
                         </div>
                     </div>
