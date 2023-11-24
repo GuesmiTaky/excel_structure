@@ -134,7 +134,7 @@ const ListCategoryMain = () => {
 
   const handleClick = (index, id) => {
     console.log("handleClick index", index);
-    setSelectedCategory(id);
+    setSelectedCategory(index + 1);
     setProjects([]);
     fetchProjectsDataByCategory(id, 1, perPage);
     setCurrentPage(1);
