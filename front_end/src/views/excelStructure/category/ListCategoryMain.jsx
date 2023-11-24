@@ -10,7 +10,7 @@ import villa3d from "../../../images/villa3d.jpg";
 
 const ListCategoryMain = () => {
   const [formattedData, setFormattedData] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState(-1);
   const [projectsData, setProjectsData] = useState([]);
   const [projects, setProjects] = useState([]);
   const navigate = useNavigate();
@@ -92,7 +92,7 @@ const ListCategoryMain = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
-    if (selectedCategory !== 0) {
+    if (selectedCategory !== -1 && formattedData[selectedCategory]) {
       fetchProjectsDataByCategory(
         formattedData[selectedCategory].id,
         page,
@@ -209,7 +209,7 @@ const ListCategoryMain = () => {
                     }`}
                     onClick={() => {
                       setShowAllProjects(true);
-                      setSelectedCategory(0);
+                      setSelectedCategory(-1);
                       fetchProjectsData();
                     }}
                   >
