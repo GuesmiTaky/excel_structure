@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./newsPage.css";
 import { apiUrl } from "../../../../store/const";
 import axios from "axios";
@@ -21,7 +21,6 @@ const NewsPage = ({ toggleLoading }) => {
         toggleLoading(false);
       })
       .catch((error) => {
-        console.error("Erreur lors de la récupération des nouvelles :", error);
         toggleLoading(false);
       });
   }, []);
@@ -40,7 +39,7 @@ const NewsPage = ({ toggleLoading }) => {
     }
   }, [dataNews]);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     if (formattedData.length > 3) {
       if (intervalId) {
         clearInterval(intervalId);
@@ -54,7 +53,7 @@ const NewsPage = ({ toggleLoading }) => {
         setIntervalId(id);
       }
     }
-  };
+  }, [formattedData, intervalId, setCurrentDisplay, setIntervalId]);
 
   useEffect(() => {
     handleClick();
@@ -63,7 +62,7 @@ const NewsPage = ({ toggleLoading }) => {
         clearInterval(intervalId);
       }
     };
-  }, []);
+  }, [handleClick, intervalId]);
 
   const isMobile = window.innerWidth <= 899;
   const itemsToDisplay = isMobile ? 1 : 3;

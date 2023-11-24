@@ -45,6 +45,11 @@ const HeroSection = () => {
   };
 
   useEffect(() => {
+    const greenRefCurrent = greenRef.current;
+    const textRefCurrent = textRef.current;
+    const subTextRefCurrent = subTextRef.current;
+    const buttonRefCurrent = buttonRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -62,18 +67,18 @@ const HeroSection = () => {
       }
     );
 
-    greenRef.current && observer.observe(greenRef.current);
-    textRef.current && observer.observe(textRef.current);
-    subTextRef.current && observer.observe(subTextRef.current);
-    buttonRef.current && observer.observe(buttonRef.current);
+    greenRefCurrent && observer.observe(greenRefCurrent);
+    textRefCurrent && observer.observe(textRefCurrent);
+    subTextRefCurrent && observer.observe(subTextRefCurrent);
+    buttonRefCurrent && observer.observe(buttonRefCurrent);
 
     return () => {
-      greenRef.current && observer.unobserve(greenRef.current);
-      textRef.current && observer.unobserve(textRef.current);
-      subTextRef.current && observer.unobserve(subTextRef.current);
-      buttonRef.current && observer.unobserve(buttonRef.current);
+      greenRefCurrent && observer.unobserve(greenRefCurrent);
+      textRefCurrent && observer.unobserve(textRefCurrent);
+      subTextRefCurrent && observer.unobserve(subTextRefCurrent);
+      buttonRefCurrent && observer.unobserve(buttonRefCurrent);
     };
-  }, []);
+  }, [greenRef, textRef, subTextRef, buttonRef]); // Add the refs to the dependency array
 
   return (
     <div className="main-hero-section">
