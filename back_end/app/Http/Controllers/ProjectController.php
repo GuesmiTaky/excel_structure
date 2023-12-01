@@ -12,17 +12,17 @@ use Carbon\Carbon;
 class ProjectController extends Controller
 {
 
-    // Les règles de validation pour les attributs du modèle
+    // Les rÃ¨gles de validation pour les attributs du modÃ¨le
     public static $rules = [
         'name' => 'required|string|max:100',
     ];
 
-    // Les messages d'erreur pour les règles de validation du modèle
+    // Les messages d'erreur pour les rÃ¨gles de validation du modÃ¨le
     public static $errorMessages = [
-        'name.required' => 'Le nom de la catégorie est obligatoire',
+        'name.required' => 'Le nom de la catÃ©gorie est obligatoire',
     ];
 
-    // Récupérer la liste de tous les projets
+    // RÃ©cupÃ©rer la liste de tous les projets
     public function index()
     {
         $projects = Project::orderBy('created_at', 'desc')->with('imageRelations')->with('category')->paginate(10);
@@ -37,7 +37,7 @@ class ProjectController extends Controller
         return response()->json($projects);
     }
 
-    // Récupérer la liste de tous les projets
+    // RÃ©cupÃ©rer la liste de tous les projets
     public function listProject()
     {
         $projects = Project::orderBy('created_at', 'desc')->with('imageRelations')->with('category')->paginate(8);
@@ -51,7 +51,7 @@ class ProjectController extends Controller
         return response()->json($projects);
     }
 
-    // Récupérer la liste de tous les projets par 6
+    // RÃ©cupÃ©rer la liste de tous les projets par 6
     public function projectByCategory($id)
     {
         $projects = Project::where('category_id', $id)
@@ -62,7 +62,7 @@ class ProjectController extends Controller
     }
 
 
-    // Récupérer la liste de tous les projets par 6
+    // RÃ©cupÃ©rer la liste de tous les projets par 6
     public function getLatestProjects()
     {
         $projects = Project::orderBy('date', 'desc')
@@ -73,7 +73,7 @@ class ProjectController extends Controller
         return response()->json($projects);
     }
 
-    // Récupérer la liste de tous les projets par 6
+    // RÃ©cupÃ©rer la liste de tous les projets par 6
     public function getLatestProjectsByCategory($categoryId, $projectId)
     {
         $projects = Project::where('category_id', $categoryId)
@@ -86,12 +86,12 @@ class ProjectController extends Controller
         return response()->json($projects);
     }
 
-    // Récupérer les détails d'un projet spécifique
+    // RÃ©cupÃ©rer les dÃ©tails d'un projet spÃ©cifique
     public function show($id)
     {
         $project = Project::with('category', 'imageRelations')->find($id);
         if (!$project) {
-            return response()->json(['message' => 'Projet non trouvé'], 404);
+            return response()->json(['message' => 'Projet non trouvÃ©'], 404);
         }
 
         return response()->json($project);
@@ -136,7 +136,7 @@ class ProjectController extends Controller
                 $filename = uniqid() . '_' . $file['name'];
                 $file_path = $file['preview'];
                 $file_content = file_get_contents($file_path);
-                $file_path = storage_path('app\public\pictures\\' . $filename);
+                $file_path = storage_path('app/public/pictures/' . $filename);
                 file_put_contents($file_path, $file_content);
                 $image = new Image();
                 $image->project_id = $project->id;
@@ -149,12 +149,12 @@ class ProjectController extends Controller
         return response()->json($project, 201);
     }
 
-    // Mettre à jour un projet existant
+    // Mettre Ã  jour un projet existant
     public function update(Request $request, $id)
     {
         $project = Project::find($id);
         if (!$project) {
-            return response()->json(['message' => 'Projet non trouvé'], 404);
+            return response()->json(['message' => 'Projet non trouvÃ©'], 404);
         }
         $validator = Validator::make($request->all(), self::$rules, self::$errorMessages);
 
@@ -190,7 +190,7 @@ class ProjectController extends Controller
                     $filename = uniqid() . '_' . $file['name'];
                     $file_path = $file['preview'];
                     $file_content = file_get_contents($file_path);
-                    $file_path = storage_path('app\public\pictures\\' . $filename);
+                    $file_path = storage_path('app/public/pictures/' . $filename);
                     file_put_contents($file_path, $file_content);
                     $image = new Image();
                     $image->project_id = $project->id;
@@ -200,7 +200,7 @@ class ProjectController extends Controller
             }
         }
 
-        $project->load('category'); // charge la relation de catégorie
+        $project->load('category'); // charge la relation de catÃ©gorie
         return response()->json($project);
     }
 
@@ -209,7 +209,7 @@ class ProjectController extends Controller
     {
         $project = Project::find($id);
         if (!$project) {
-            return response()->json(['message' => 'Projet non trouvé'], 404);
+            return response()->json(['message' => 'Projet non trouvÃ©'], 404);
         }
 
         $images = $project->imageRelations;
@@ -225,6 +225,6 @@ class ProjectController extends Controller
         }
 
         $project->delete();
-        return response()->json(['message' => 'Projet supprimé'], 204);
+        return response()->json(['message' => 'Projet supprimÃ©'], 204);
     }
 }
