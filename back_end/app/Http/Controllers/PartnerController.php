@@ -62,7 +62,7 @@ class PartnerController extends Controller
                 $filename = uniqid() . '_' . $file['name'];
                 $file_path = $file['preview'];
                 $file_content = file_get_contents($file_path);
-                $file_path = storage_path('app\public\pictures\\' . $filename);
+                $file_path = storage_path(env('PICTURES_PATH') . $filename);
                 file_put_contents($file_path, $file_content);
                 $image = new Image();
                 $image->partner_id = $partner->id;
@@ -98,7 +98,7 @@ class PartnerController extends Controller
             $images = $partner->imageRelation;
 
             if ($images) {
-                $imagePath = storage_path('app/public/pictures/' . $images->image_url);
+                $imagePath = storage_path(env('PICTURES_PATH') . $images->image_url);
                 if (File::exists($imagePath)) {
                     File::delete($imagePath);
                     $partner->imageRelation()->delete();
@@ -111,7 +111,7 @@ class PartnerController extends Controller
                     $filename = uniqid() . '_' . $file['name'];
                     $file_path = $file['preview'];
                     $file_content = file_get_contents($file_path);
-                    $file_path = storage_path('app\public\pictures\\' . $filename);
+                    $file_path = storage_path(env('PICTURES_PATH') . $filename);
                     file_put_contents($file_path, $file_content);
                     $image = new Image();
                     $image->partner_id = $partner->id;
@@ -132,7 +132,7 @@ class PartnerController extends Controller
         } else
             $images = $partner->imageRelation;
         if ($images) {
-            $imagePath = storage_path('app/public/pictures/' . $images->image_url);
+            $imagePath = storage_path(env('PICTURES_PATH') . $images->image_url);
             if (File::exists($imagePath)) {
                 File::delete($imagePath);
                 $partner->imageRelation()->delete();

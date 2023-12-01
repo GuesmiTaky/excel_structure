@@ -136,7 +136,7 @@ class ProjectController extends Controller
                 $filename = uniqid() . '_' . $file['name'];
                 $file_path = $file['preview'];
                 $file_content = file_get_contents($file_path);
-                $file_path = storage_path('app/public/pictures/' . $filename);
+                $file_path = storage_path(env('PICTURES_PATH') . $filename);
                 file_put_contents($file_path, $file_content);
                 $image = new Image();
                 $image->project_id = $project->id;
@@ -190,7 +190,7 @@ class ProjectController extends Controller
                     $filename = uniqid() . '_' . $file['name'];
                     $file_path = $file['preview'];
                     $file_content = file_get_contents($file_path);
-                    $file_path = storage_path('app/public/pictures/' . $filename);
+                    $file_path = storage_path(env('PICTURES_PATH') . $filename);
                     file_put_contents($file_path, $file_content);
                     $image = new Image();
                     $image->project_id = $project->id;
@@ -216,7 +216,7 @@ class ProjectController extends Controller
 
         if ($images) {
             foreach ($images as $image) {
-                $imagePath = storage_path('app/public/pictures/' . $image->image_url);
+                $imagePath = storage_path(env('PICTURES_PATH') . $image->image_url);
                 if (File::exists($imagePath)) {
                     File::delete($imagePath);
                     $project->imageRelations()->delete();

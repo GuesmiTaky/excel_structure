@@ -40,11 +40,11 @@ class ImageController extends Controller
             return response()->json(['success' => false, 'message' => 'Image not found for the specified project']);
         }
 
-        $imagePath = storage_path('app/public/pictures/' . $filename);
+        $imagePath = storage_path(env('PICTURES_PATH') . $filename);
         if (File::exists($imagePath)) {
             File::delete($imagePath);
-             $image->delete();
-             return response()->json(['success' => true, 'message' => 'File deleted successfully']);
+            $image->delete();
+            return response()->json(['success' => true, 'message' => 'File deleted successfully']);
         } else {
             return response()->json(['success' => false, 'message' => 'File not found on the server']);
         }
