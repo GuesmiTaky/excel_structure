@@ -173,6 +173,7 @@ class ProjectController extends Controller
         $project->execution_mission = $request->input('execution_mission');
         $project->surface = $request->input('surface');
         $project->amount = $request->input('amount');
+        $project->video = $request->input('video');
         $project->category_id = $request->input('category_id');
         $originalDate = $request->input('date');
         $date = Carbon::parse($originalDate);
