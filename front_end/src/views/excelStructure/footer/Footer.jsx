@@ -68,7 +68,7 @@ const Footer = ({ pageRef }) => {
             <div className="footer-adresse">
               30 Av. des Olives - 13013 Marseille
             </div>
-            <div style={{ marginTop: "2%"}}>
+            <div style={{ height: "30px" }}>
               <img src={email} alt="email" style={{ marginRight: "10px" }} />
               <b>
                 <a
@@ -79,7 +79,7 @@ const Footer = ({ pageRef }) => {
                 </a>
               </b>
             </div>
-            <div style={{ marginTop: "2%", marginBottom: "-4%" }}>
+            <div style={{ height: "10px" }}>
               <img src={phone} alt="phone" style={{ marginRight: "10px" }} />
               <b>04 84 49 62 18</b>
             </div>
