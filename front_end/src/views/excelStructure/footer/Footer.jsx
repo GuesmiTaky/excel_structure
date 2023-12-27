@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./footer.css";
 import Logo from "./../../../assets/Logo";
+import phone from "./../../../assets/phone.svg";
+import email from "./../../../assets/email.svg";
 import { Link } from "react-router-dom";
 
 const Footer = ({ pageRef }) => {
@@ -24,10 +26,14 @@ const Footer = ({ pageRef }) => {
           <div className="logo-footer">
             <Logo />
           </div>
+          <div className="desc-footer">
+            Nous sommes une équipe expérimentée dédiée de la réussite et à
+            l'optimisation de vos projets
+          </div>
         </div>
 
         <div className="second-child-footer">
-          <div className="page-footer">Pages</div>
+          <div className="page-footer">Arboresence</div>
           <Link
             onClick={scrollToTop}
             to="/"
@@ -57,19 +63,27 @@ const Footer = ({ pageRef }) => {
         </div>
 
         <div className="three-child-footer">
+          <div className="title-footer">Contact</div>
           <div className="contact-footer">
-            <b>Mail:</b>{" "}
-            <a
-              style={{ color: "gray", textDecoration: "none" }}
-              href="mailto:contact@excelstructure.fr"
-            >
-              contact@excelstructure.fr
-            </a>
-            <br />
-            <b>Tel:</b> 06 67 90 01 84/04 84 49 62 18
-            <br />
-            30 Av. des Olives - 13013 Marseille
-          </div>{" "}
+            <div className="footer-adresse">
+              30 Av. des Olives - 13013 Marseille
+            </div>
+            <div style={{ marginTop: "2%"}}>
+              <img src={email} alt="email" style={{ marginRight: "10px" }} />
+              <b>
+                <a
+                  style={{ color: "black", textDecoration: "none" }}
+                  href="mailto:contact@excelstructure.fr"
+                >
+                  contact@excelstructure.fr
+                </a>
+              </b>
+            </div>
+            <div style={{ marginTop: "2%", marginBottom: "-4%" }}>
+              <img src={phone} alt="phone" style={{ marginRight: "10px" }} />
+              <b>04 84 49 62 18</b>
+            </div>
+          </div>
         </div>
       </div>
 

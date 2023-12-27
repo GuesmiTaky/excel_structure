@@ -16,22 +16,18 @@
   display: flex;
   flex-direction: column;
   width: 33%;
-  align-items: center;
 }
 
 .second-child-footer {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  align-items: center;
   margin-bottom: 2%;
+  width: 15%;
 }
 
 .three-child-footer {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  align-items: center;
 }
 
 .rejoindre-nos-footer {
@@ -45,20 +41,17 @@
 }
 
 .desc-footer {
+  color: #525252;
+  text-align: left;
+  font-size: 14px;
   font-family: "Poppins";
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #002e27;
-  margin-top: 15px;
+  line-height: 19px;
 }
 
 .page-footer {
   font-family: "Poppins";
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 31px;
   letter-spacing: 0em;
   text-align: left;
@@ -66,14 +59,33 @@
   height: 18px;
 }
 
+.title-footer {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #292f36;
+}
+
+.footer-adresse {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: gray;
+}
+
 .title-page-footer {
   font-family: "Poppins";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 60px;
   letter-spacing: 0.01em;
   text-align: left;
-  color: #4d5053;
   height: 5px;
 }
 
@@ -120,6 +132,10 @@
   font-size: 14px;
 }
 
+.logo-footer {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1240px) {
   .footer-footer {
     display: flex;
@@ -158,10 +174,6 @@
   .first-child-footer {
     width: 100%;
     margin-top: 10px;
-  }
-
-  .logo-footer {
-    text-align: center;
   }
 
   .second-child-footer {
@@ -215,14 +227,6 @@
   .first-child-footer {
     width: 100%;
     margin-top: 30px;
-  }
-
-  .logo-footer {
-    text-align: center;
-  }
-
-  .desc-footer {
-    text-align: center;
   }
 
   .second-child-footer {
